@@ -1,9 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const authRouter = require('./authRouter');
-const PORT = process.env.PORT || 7788;
+require('dotenv').config();
 
-const uri = "mongodb+srv://qfana2123:3S2EeLLioWOaLvMs@cluster0.wqusi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const PORT = process.env.PORT;
+
+const uri = `mongodb+srv://qfana2123:${process.env.DBPASS}@cluster0.wqusi.mongodb.net/auth_roles?retryWrites=true&w=majority&appName=Cluster0`;
 
 const app = express();
 
