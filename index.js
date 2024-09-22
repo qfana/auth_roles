@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const authRouter = require('./authRouter');
 const PORT = process.env.PORT || 7788;
 
-const uri = "mongodb+srv://qfana2123:3S2EeLLioWOaLvMs@cluster0.wqusi.mongodb.net/?retryWrites=true&w=majority&ssl=true";
+const uri = "mongodb+srv://qfana2123:3S2EeLLioWOaLvMs@cluster0.wqusi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const app = express();
 

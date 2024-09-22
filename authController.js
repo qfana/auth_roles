@@ -1,3 +1,7 @@
+const User = require('./models/Users');
+const Role = require('./models/Role');
+
+
 class authConroller {
 
   async registration(req, res) {
@@ -18,6 +22,12 @@ class authConroller {
 
   async getUsers(req, res) {
     try {
+      const userRole = new Role();
+      const adminRole = new Role({ value: "admin" });
+
+      await userRole.save();
+      await adminRole.save();
+
       res.json("server work");
     } catch (e) {
       console.log(e);

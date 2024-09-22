@@ -1,5 +1,5 @@
 {
-  "name": "auth_role",
+  "name": "auth_roles",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
